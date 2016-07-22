@@ -5,6 +5,7 @@ import (
 )
 
 type Company struct {
+	ID           *int64                 `json:"id,omitempty"`
 	ExternalID   *string                `json:"external_id,omitempty"`
 	Name         *string                `json:"name,omitempty"`
 	Domains      []string               `json:"domains,omitempty"`
