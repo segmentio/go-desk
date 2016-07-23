@@ -12,6 +12,13 @@ type Article struct {
 	PublishAt       *Timestamp `json:"publish_at,omitempty"`
 	CreatedAt       *Timestamp `json:"created_at,omitempty"`
 	UpdatedAt       *Timestamp `json:"updated_at,omitempty"`
+	Rating          *int       `json:"rating,omitempty"`
+	RatingCount     *int       `json:"rating_count,omitempty"`
+	RatingScore     *int       `json:"rating_score,omitempty"`
+	PublicUrl       *string    `json:"public_url,omitempty"`
+	InSupportCenter *bool      `json:"in_support_center,omitempty"`
+	InternalNotes   *string    `json:"internal_notes,omitempty"`
+	Locale          *string    `json:"locale,omitempty"`
 	Body            *string    `json:"body,omitempty"`
 	BodyEmail       *string    `json:"body_email,omitempty"`
 	BodyEmailAuto   *bool      `json:"body_email_auto,omitempty"`
@@ -22,13 +29,6 @@ type Article struct {
 	BodyQna         *string    `json:"body_qna,omitempty"`
 	BodyPhone       *string    `json:"body_phone,omitempty"`
 	BodyFacebook    *string    `json:"body_facebook,omitempty"`
-	Rating          *int       `json:"rating,omitempty"`
-	RatingCount     *int       `json:"rating_count,omitempty"`
-	RatingScore     *int       `json:"rating_score,omitempty"`
-	PublicUrl       *string    `json:"public_url,omitempty"`
-	InSupportCenter *bool      `json:"in_support_center,omitempty"`
-	InternalNotes   *string    `json:"internal_notes,omitempty"`
-	Locale          *string    `json:"locale,omitempty"`
 	Resource
 }
 
