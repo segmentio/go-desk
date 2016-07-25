@@ -5,6 +5,7 @@ import (
 )
 
 type Customer struct {
+	ID           *int64                 `json:"id,omitempty"`
 	ExternalID   *string                `json:"external_id,omitempty"`
 	FirstName    *string                `json:"first_name,omitempty"`
 	LastName     *string                `json:"last_name,omitempty"`
