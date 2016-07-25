@@ -26,6 +26,7 @@ type Client struct {
 	User         *UserService
 	Group        *GroupService
 	Article      *ArticleService
+	Feedback     *FeedbackService
 }
 
 func NewClient(httpClient *http.Client, endpointURL string, userEmail string, userPassword string) *Client {
@@ -40,6 +41,7 @@ func NewClient(httpClient *http.Client, endpointURL string, userEmail string, us
 	c.User = &UserService{client: c}
 	c.Group = &GroupService{client: c}
 	c.Article = &ArticleService{client: c}
+	c.Feedback = &FeedbackService{client: c}
 	return c
 }
 
