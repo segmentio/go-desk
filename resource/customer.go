@@ -5,22 +5,24 @@ import (
 )
 
 type Customer struct {
-	ID           *int64                 `json:"id,omitempty"`
-	ExternalID   *string                `json:"external_id,omitempty"`
-	FirstName    *string                `json:"first_name,omitempty"`
-	LastName     *string                `json:"last_name,omitempty"`
-	Company      *string                `json:"company,omitempty"`
-	Title        *string                `json:"title,omitempty"`
-	Avatar       *string                `json:"avatar,omitempty"`
-	Background   *string                `json:"background,omitempty"`
-	Language     *string                `json:"language,omitempty"`
-	LockedUntil  *Timestamp             `json:"locked_until,omitempty"`
-	CreatedAt    *Timestamp             `json:"created_at,omitempty"`
-	UpdatedAt    *Timestamp             `json:"updated_at,omitempty"`
-	CustomFields map[string]interface{} `json:"custom_fields,omitempty"`
-	Emails       []map[string]string    `json:"emails,omitempty"`
-	PhoneNumbers []map[string]string    `json:"phone_numbers,omitempty"`
-	Addresses    []map[string]string    `json:"addresses,omitempty"`
+	ID                     *int64                 `json:"id,omitempty"`
+	ExternalID             *string                `json:"external_id,omitempty"`
+	FirstName              *string                `json:"first_name,omitempty"`
+	LastName               *string                `json:"last_name,omitempty"`
+	Company                *string                `json:"company,omitempty"`
+	Title                  *string                `json:"title,omitempty"`
+	Avatar                 *string                `json:"avatar,omitempty"`
+	Background             *string                `json:"background,omitempty"`
+	Language               *string                `json:"language,omitempty"`
+	LockedUntil            *Timestamp             `json:"locked_until,omitempty"`
+	CreatedAt              *Timestamp             `json:"created_at,omitempty"`
+	UpdatedAt              *Timestamp             `json:"updated_at,omitempty"`
+	CustomFields           map[string]interface{} `json:"custom_fields,omitempty"`
+	CanAccessPrivatePortal *bool                  `json:"access_private_portal,omitempty"`
+	CanAccessCompanyCases  *bool                  `json:"access_company_cases,omitempty"`
+	Emails                 []map[string]string    `json:"emails,omitempty"`
+	PhoneNumbers           []map[string]string    `json:"phone_numbers,omitempty"`
+	Addresses              []map[string]string    `json:"addresses,omitempty"`
 	Resource
 }
 
