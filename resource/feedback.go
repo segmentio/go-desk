@@ -6,7 +6,7 @@ import (
 
 type Feedback struct {
 	ID                 *int64     `json:"id,omitempty"`
-	Rating             *int       `json:"rating,omitempty"`
+	Rating             *string    `json:"rating,omitempty"`
 	RatingType         *string    `json:"rating_type,omitempty"`
 	AdditionalFeedback *string    `json:"additional_feedback,omitempty"`
 	CreatedAt          *Timestamp `json:"created_at,omitempty"`
