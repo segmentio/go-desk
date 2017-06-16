@@ -2,9 +2,10 @@ package resource
 
 import (
 	"fmt"
-	. "github.com/talbright/go-desk/types"
 	"strconv"
 	"strings"
+
+	. "github.com/segmentio/go-desk/types"
 )
 
 type Hal struct {

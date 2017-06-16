@@ -1,8 +1,9 @@
 package service
 
 import (
-	. "github.com/talbright/go-desk/resource"
 	"net/http"
+
+	. "github.com/segmentio/go-desk/resource"
 )
 
 type DraftService struct {

@@ -1,9 +1,10 @@
 package service
 
 import (
-	. "github.com/talbright/go-desk/resource"
 	"net/http"
 	"net/url"
+
+	. "github.com/segmentio/go-desk/resource"
 )
 
 type MessageService struct {

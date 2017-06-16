@@ -2,11 +2,12 @@ package integration_tests
 
 import (
 	"fmt"
-	. "github.com/smartystreets/goconvey/convey"
-	resource "github.com/talbright/go-desk/resource"
 	"log"
 	"testing"
 	"time"
+
+	resource "github.com/segmentio/go-desk/resource"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestMessageIntegration(t *testing.T) {

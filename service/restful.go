@@ -2,9 +2,10 @@ package service
 
 import (
 	"fmt"
-	. "github.com/talbright/go-desk/types"
 	"net/http"
 	"net/url"
+
+	. "github.com/segmentio/go-desk/types"
 )
 
 type Restful struct {

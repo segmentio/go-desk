@@ -2,8 +2,9 @@ package service
 
 import (
 	"encoding/json"
-	. "github.com/talbright/go-desk/resource"
 	"net/http"
+
+	. "github.com/segmentio/go-desk/resource"
 )
 
 type AttachmentService struct {

@@ -1,9 +1,10 @@
 package resource
 
 import (
-	"github.com/lann/builder"
-	. "github.com/talbright/go-desk/types"
 	"time"
+
+	"github.com/lann/builder"
+	. "github.com/segmentio/go-desk/types"
 )
 
 type jsonBuilder builder.Builder

@@ -1,10 +1,11 @@
 package integration_tests
 
 import (
-	. "github.com/smartystreets/goconvey/convey"
-	resource "github.com/talbright/go-desk/resource"
 	"log"
 	"testing"
+
+	resource "github.com/segmentio/go-desk/resource"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestAttachmentIntegration(t *testing.T) {

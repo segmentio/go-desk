@@ -3,12 +3,13 @@ package integration_tests
 import (
 	// "log"
 	"fmt"
-	. "github.com/smartystreets/goconvey/convey"
-	resource "github.com/talbright/go-desk/resource"
-	types "github.com/talbright/go-desk/types"
 	"net/url"
 	"testing"
 	"time"
+
+	resource "github.com/segmentio/go-desk/resource"
+	types "github.com/segmentio/go-desk/types"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestCustomerIntegration(t *testing.T) {

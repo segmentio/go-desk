@@ -4,13 +4,14 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	desk "github.com/talbright/go-desk"
 	"io"
 	"io/ioutil"
 	"net/http"
 	"net/url"
 	"strconv"
 	"time"
+
+	desk "github.com/segmentio/go-desk"
 
 	"github.com/Sirupsen/logrus"
 )

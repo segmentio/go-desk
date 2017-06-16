@@ -1,5 +1,5 @@
-[![GoDoc](https://godoc.org/github.com/talbright/go-desk?status.png)](https://godoc.org/github.com/talbright/go-desk)
-[![Build Status](https://travis-ci.org/talbright/go-desk.png?branch=master)](https://travis-ci.org/talbright/go-desk)
+[![GoDoc](https://godoc.org/github.com/segmentio/go-desk?status.png)](https://godoc.org/github.com/segmentio/go-desk)
+[![Build Status](https://travis-ci.org/segmentio/go-desk.png?branch=master)](https://travis-ci.org/segmentio/go-desk)
 
 Desk.com APIv2 client implementation in Go (http://dev.desk.com/API)
 

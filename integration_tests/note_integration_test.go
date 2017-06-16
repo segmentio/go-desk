@@ -2,13 +2,14 @@ package integration_tests
 
 import (
 	"fmt"
-	. "github.com/smartystreets/goconvey/convey"
-	resource "github.com/talbright/go-desk/resource"
-	types "github.com/talbright/go-desk/types"
 	"log"
 	"net/url"
 	"testing"
 	"time"
+
+	resource "github.com/segmentio/go-desk/resource"
+	types "github.com/segmentio/go-desk/types"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestNoteIntegration(t *testing.T) {

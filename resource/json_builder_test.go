@@ -2,10 +2,11 @@ package resource
 
 import (
 	"fmt"
-	. "github.com/smartystreets/goconvey/convey"
-	. "github.com/talbright/go-desk/types"
 	"testing"
 	"time"
+
+	. "github.com/segmentio/go-desk/types"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestJsonBuilder(t *testing.T) {

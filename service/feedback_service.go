@@ -2,9 +2,10 @@ package service
 
 import (
 	"encoding/json"
-	. "github.com/talbright/go-desk/resource"
 	"net/http"
 	"net/url"
+
+	. "github.com/segmentio/go-desk/resource"
 )
 
 type FeedbackService struct {
@@ -18,11 +19,11 @@ func (c *FeedbackService) List(params *url.Values) (*Page, *http.Response, error
 	page := new(Page)
 	path := NewResourcePath(NewFeedback())
 	resp, err := restful.
-	Get(path.Path()).
-	Json(page).
-	Params(params).
-	Client(c.client).
-	Do()
+		Get(path.Path()).
+		Json(page).
+		Params(params).
+		Client(c.client).
+		Do()
 	if err != nil {
 		return nil, resp, err
 	}

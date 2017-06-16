@@ -3,9 +3,10 @@ package service
 import (
 	"bytes"
 	"encoding/json"
-	. "github.com/talbright/go-desk/resource"
 	"net/http"
 	"net/url"
+
+	. "github.com/segmentio/go-desk/resource"
 )
 
 type CaseService struct {

@@ -1,7 +1,7 @@
 package resource
 
 import (
-	. "github.com/talbright/go-desk/types"
+	. "github.com/segmentio/go-desk/types"
 )
 
 type Customer struct {

@@ -2,14 +2,15 @@ package integration_tests
 
 import (
 	"fmt"
-	dotenv "github.com/joho/godotenv"
-	resource "github.com/talbright/go-desk/resource"
-	service "github.com/talbright/go-desk/service"
-	types "github.com/talbright/go-desk/types"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
+	dotenv "github.com/joho/godotenv"
+	resource "github.com/segmentio/go-desk/resource"
+	service "github.com/segmentio/go-desk/service"
+	types "github.com/segmentio/go-desk/types"
 )
 
 var DefaultCustomerId int

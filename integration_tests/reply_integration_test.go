@@ -2,11 +2,12 @@ package integration_tests
 
 import (
 	"fmt"
-	. "github.com/smartystreets/goconvey/convey"
-	types "github.com/talbright/go-desk/types"
 	"net/url"
 	"testing"
 	"time"
+
+	types "github.com/segmentio/go-desk/types"
+	. "github.com/smartystreets/goconvey/convey"
 )
 
 func TestReplyIntegration(t *testing.T) {

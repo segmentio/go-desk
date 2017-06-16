@@ -3,8 +3,9 @@ package resource
 import (
 	"bytes"
 	"encoding/base64"
-	. "github.com/talbright/go-desk/types"
 	"io/ioutil"
+
+	. "github.com/segmentio/go-desk/types"
 )
 
 type Attachment struct {
