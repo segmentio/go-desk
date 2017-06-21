@@ -84,7 +84,7 @@ type Case struct {
 			Class string `json:"class"`
 			Href  string `json:"href"`
 		} `json:"message"`
-	} `json:"_links"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 
