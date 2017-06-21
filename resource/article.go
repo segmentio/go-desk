@@ -29,6 +29,33 @@ type Article struct {
 	BodyQna         *string    `json:"body_qna,omitempty"`
 	BodyPhone       *string    `json:"body_phone,omitempty"`
 	BodyFacebook    *string    `json:"body_facebook,omitempty"`
+	Links           struct {
+		Self struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+		} `json:"self"`
+		Topic struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+		} `json:"topic"`
+		Translations struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+		} `json:"translations"`
+		Attachments struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+			Count int    `json:"count"`
+		} `json:"attachments"`
+		CreatedBy struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+		} `json:"created_by"`
+		UpdatedBy struct {
+			Href  string `json:"href"`
+			Class string `json:"class"`
+		} `json:"updated_by"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 

@@ -23,6 +23,28 @@ type Customer struct {
 	Emails                 []map[string]string    `json:"emails,omitempty"`
 	PhoneNumbers           []map[string]string    `json:"phone_numbers,omitempty"`
 	Addresses              []map[string]string    `json:"addresses,omitempty"`
+	Links                  struct {
+		Self struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"self"`
+		Cases struct {
+			Class string `json:"class"`
+			Count int    `json:"count"`
+			Href  string `json:"href"`
+		} `json:"cases"`
+		Company struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"company"`
+		FacebookUser interface{} `json:"facebook_user"`
+		TwitterUser  interface{} `json:"twitter_user"`
+		LockedBy     interface{} `json:"locked_by"`
+		Labels       struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"labels"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 

@@ -25,6 +25,66 @@ type Case struct {
 	FirstResolvedAt *Timestamp             `json:"first_resolved_at,omitempty"`
 	LastResolvedAt  *Timestamp             `json:"resolved_at,omitempty"`
 	CustomFields    map[string]interface{} `json:"custom_fields,omitempty"`
+	Links           struct {
+		Labels struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"labels"`
+		AssignedGroup struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"assigned_group"`
+		MacroPreview struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"macro_preview"`
+		LockedBy  interface{} `json:"locked_by"`
+		CaseLinks struct {
+			Class string `json:"class"`
+			Count int    `json:"count"`
+			Href  string `json:"href"`
+		} `json:"case_links"`
+		Attachments struct {
+			Class string `json:"class"`
+			Count int    `json:"count"`
+			Href  string `json:"href"`
+		} `json:"attachments"`
+		History struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"history"`
+		Feedbacks interface{} `json:"feedbacks"`
+		Customer  struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"customer"`
+		Replies struct {
+			Class string `json:"class"`
+			Count int    `json:"count"`
+			Href  string `json:"href"`
+		} `json:"replies"`
+		Draft struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"draft"`
+		Notes struct {
+			Class string `json:"class"`
+			Count int    `json:"count"`
+			Href  string `json:"href"`
+		} `json:"notes"`
+		AssignedUser struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"assigned_user"`
+		Self struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"self"`
+		Message struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"message"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 
