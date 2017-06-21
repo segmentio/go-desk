@@ -13,6 +13,28 @@ type Feedback struct {
 	UpdatedAt          *Timestamp `json:"updated_at,omitempty"`
 	Case               *string    `json:"case,omitempty"`
 	User               *string    `json:"user,omitempty"`
+	Links              struct {
+		Self struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"self"`
+		Case struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"case"`
+		Customer struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"customer"`
+		Reply struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"reply"`
+		User struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"user"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 

@@ -12,6 +12,24 @@ type Company struct {
 	CreatedAt    *Timestamp             `json:"created_at,omitempty"`
 	UpdatedAt    *Timestamp             `json:"updated_at,omitempty"`
 	CustomFields map[string]interface{} `json:"custom_fields,omitempty"`
+	Links        struct {
+		Self struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"self"`
+		Customers struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"customers"`
+		Cases struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"cases"`
+		Labels struct {
+			Class string `json:"class"`
+			Href  string `json:"href"`
+		} `json:"labels"`
+	} `json:"_links,omitempty"`
 	Resource
 }
 
