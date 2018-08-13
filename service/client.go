@@ -13,7 +13,7 @@ import (
 
 	desk "github.com/segmentio/go-desk"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 )
 
 type Client struct {
